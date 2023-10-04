@@ -3,9 +3,7 @@
   align-items: center;
   justify-content: space-between;
   width: auto;
-  margin-top: 25px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin: 25px;
   border-top: 2px solid #7e0000;
   border-bottom: 2px solid #7e0000;
 }
@@ -14,7 +12,6 @@
   color: #7e0000;
   font-family: 'Montserrat';
   font-size: 2rem;
-  padding: 10px;
   letter-spacing: 10px;
 }
 
@@ -74,10 +71,10 @@
 
 @media screen and (max-width: 576px) {
   .menu {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .linksCo a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -91,10 +88,11 @@
     flex-direction: column;
     justify-content: center;
   }
-  .linksCo div {
-    padding-bottom: 50px;
+  .linksCo {
+    height: auto;
   }
   .linksCo a {
+    margin: 25px;
     font-size: 2.2rem;
   }
 }
