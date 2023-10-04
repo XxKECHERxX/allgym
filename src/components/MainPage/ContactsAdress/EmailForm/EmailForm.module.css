@@ -43,8 +43,9 @@
 }
 
 .btnSubmit {
-  width: calc(auto + 15px);
-  height: calc(auto + 15px);
+  width: auto;
+  height: auto;
+  padding: 20px;
   border-radius: 5px;
   background: #7e0000;
   border: 0;
