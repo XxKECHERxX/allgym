@@ -9,20 +9,26 @@ import { useEffect, useState } from 'react'
 const transDuration = 1500
 
 const Features = () => {
-  const [scrollTop, setScrollTop] = useState(0)
+  // const [scrollTop, setScrollTop] = useState(0)
 
-  const positionY = scrollTop <= 400 ? 400 - scrollTop : 0
+  // const positionY = scrollTop <= 400 ? 400 - scrollTop : 0
 
-  const handleScroll = (event) => {
-    setScrollTop(window.scrollY)
-  }
+  // const handleScroll = (event) => {
+  //   setScrollTop(window.scrollY)
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll)
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll)
+  //   }
+  // }, [])
+
+  const [positionYver2, setPositionYver2] = useState(400)
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    setTimeout(() => setPositionYver2(0), 500)
   }, [])
 
   return (
@@ -33,7 +39,7 @@ const Features = () => {
           className={styles.frameFeatures}
           style={{
             transitionDuration: `${transDuration / 1.75}ms`,
-            transform: `translateY(${positionY}px)`,
+            transform: `translateY(${positionYver2}px)`,
           }}
         >
           <img src={Second} alt="Second"></img>
@@ -43,7 +49,7 @@ const Features = () => {
           className={styles.frameFeatures}
           style={{
             transitionDuration: `${transDuration / 1.5}ms`,
-            transform: `translateY(${positionY}px)`,
+            transform: `translateY(${positionYver2}px)`,
           }}
         >
           <img src={FeartMan} alt="FeartMan"></img>
@@ -55,7 +61,7 @@ const Features = () => {
           className={styles.frameFeatures}
           style={{
             transitionDuration: `${transDuration / 1.25}ms`,
-            transform: `translateY(${positionY}px)`,
+            transform: `translateY(${positionYver2}px)`,
           }}
         >
           <img src={CrossFit} alt="CrossFit"></img>
@@ -67,7 +73,7 @@ const Features = () => {
           className={styles.frameFeatures}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateY(${positionY}px)`,
+            transform: `translateY(${positionYver2}px)`,
           }}
         >
           <img src={Group} alt="Group" />

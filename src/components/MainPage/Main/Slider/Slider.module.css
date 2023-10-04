@@ -14,7 +14,7 @@
 
 .sliderImg img {
   border-radius: 20px;
-  height: 525px;
+  height: 535px;
   width: 850px;
   padding: 0px 5px;
 }
@@ -53,10 +53,10 @@
 
 @media screen and (max-width: 376px) {
   .slider {
-    height: 135vh;
+    height: 100vh;
   }
   .sliderImg img {
-    height: 130vh;
+    height: 100vh;
   }
   .buttonLeft {
     font-size: 10rem;

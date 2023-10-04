@@ -66,9 +66,9 @@
   }
   .frameFeatures img {
     align-self: center;
-    min-width: 70vh;
-    min-height: 70vh;
-    border-radius: 70vh;
+    min-width: 60vh;
+    min-height: 60vh;
+    border-radius: 60vh;
   }
   .frameText {
     font-size: 2.2rem;

@@ -1,5 +1,5 @@
 .emailForm {
-  min-width: 100%;
+  width: 100%;
   background-color: #242121;
   display: grid;
   grid-template-columns: 140px 1fr 140px;
@@ -45,7 +45,7 @@
 .btnSubmit {
   width: auto;
   height: auto;
-  padding: 20px;
+  padding: 5px;
   border-radius: 5px;
   background: #7e0000;
   border: 0;
@@ -92,6 +92,7 @@
   }
   .emailForm {
     font-size: 2.2rem;
+    width: 100%;
   }
   .emailInput {
     width: 150vh;
