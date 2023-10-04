@@ -1,0 +1,10 @@
+.lineRedHorr {
+  display: flex;
+  justify-content: center;
+}
+
+.lineRedHorr svg {
+  height: 3px;
+  width: 800px;
+  display: flex;
+}

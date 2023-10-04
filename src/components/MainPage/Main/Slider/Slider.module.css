@@ -1,0 +1,67 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+.sliderImg {
+  display: flex;
+  width: 850px;
+  margin: auto;
+
+  transition-timing-function: ease-in-out;
+}
+
+.sliderImg img {
+  border-radius: 20px;
+  height: 525px;
+  width: 850px;
+  padding: 0px 5px;
+}
+
+.buttonLeft {
+  z-index: 10;
+  width: 140px;
+  height: auto;
+  background: linear-gradient(90deg, #0c0909 0%, #0c090900 100%);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7e0000;
+  font-family: 'Courier New';
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.buttonRight {
+  z-index: 10;
+  width: 140px;
+  height: auto;
+  background: linear-gradient(270deg, #0c0909 0%, #0c090900 100%);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7e0000;
+  font-family: 'Courier New';
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 376px) {
+  .slider {
+    height: 135vh;
+  }
+  .sliderImg img {
+    height: 130vh;
+  }
+  .buttonLeft {
+    font-size: 10rem;
+  }
+  .buttonRight {
+    font-size: 10rem;
+  }
+}

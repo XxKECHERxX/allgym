@@ -1,0 +1,99 @@
+.screenHide {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.frameFormReg {
+  position: relative;
+  padding-left: 50px;
+  width: 550px;
+  height: 550px;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.formReg {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  background: #242121;
+}
+
+.textFormReg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.formRegInput {
+  width: 350px;
+  height: 25px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 25px;
+  border: 2px solid #740202;
+  font-family: 'Montserrat';
+  font-size: 0.9rem;
+}
+
+.btnSubmit {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background: #7e0000;
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d2d2d2;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 744px) {
+  .closeBtn {
+    right: 60px;
+    top: 60px;
+    z-index: 10;
+  }
+  .textFormReg {
+    font-size: 1.1rem;
+  }
+  .formRegInput {
+    font-size: 1.1rem;
+  }
+  .btnSubmit {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .textFormReg {
+    font-size: 1.4rem;
+  }
+  .formRegInput {
+    font-size: 1.4rem;
+  }
+  .btnSubmit {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,84 @@
+.emailForm {
+  height: 75px;
+  min-width: 100%;
+  background-color: #242121;
+  display: grid;
+  grid-template-columns: 140px 1fr 140px;
+  overflow: hidden;
+
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.leftDarkSide {
+  z-index: 10;
+  background: linear-gradient(90deg, #0c0909 0%, #0c090900 100%);
+}
+
+.rightDarkSide {
+  z-index: 10;
+  background: linear-gradient(270deg, #0c0909 0%, #0c090900 100%);
+}
+
+.formInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitClientEmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailInput {
+  height: 30px;
+  width: 350px;
+  margin: 20px;
+  border: 2px solid #740202;
+  border-radius: 5px;
+  background: #d2d2d2;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.btnSubmit {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background: #7e0000;
+  border: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d2d2d2;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 744px) {
+  .emailForm {
+    font-size: 1.2rem;
+  }
+  .emailInput {
+    font-size: 1.2rem;
+  }
+  .btnSubmit {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .emailForm {
+    font-size: 1.4rem;
+  }
+  .emailInput {
+    font-size: 1.4rem;
+  }
+  .btnSubmit {
+    font-size: 1.4rem;
+  }
+}

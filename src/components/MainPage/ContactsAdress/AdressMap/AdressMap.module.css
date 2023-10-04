@@ -1,0 +1,43 @@
+.adressMap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  height: 450px;
+}
+
+.frameAdressMap {
+  display: flex;
+  width: auto;
+  padding: 50px;
+}
+
+.adressContacts {
+  width: 300px;
+  height: auto;
+  padding-right: 50px;
+
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.mapFrame {
+  width: 700px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0.8;
+  border: solid 1px;
+}
+
+@media screen and (max-width: 744px) {
+  .adressContacts {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .adressContacts {
+    font-size: 1.3rem;
+  }
+}

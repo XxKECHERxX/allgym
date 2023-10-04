@@ -1,0 +1,19 @@
+.btnUp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 50;
+}
+.arrowBtn {
+  position: absolute;
+}
+
+@media screen and (max-width: 1250px) {
+  .btnUp {
+    display: none;
+  }
+}

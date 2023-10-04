@@ -1,0 +1,62 @@
+.frameAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.frameActionMobile {
+  display: none;
+}
+
+.textAction {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+}
+
+.imgOfAction img {
+  width: 500px;
+  min-height: 300px;
+  max-height: 300px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 744px) {
+  .textAction {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .textAction {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .frameActionBigVer {
+    display: none;
+  }
+  .frameActionMobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    padding-top: 25px;
+  }
+  .imgOfActionMobile img {
+    border-radius: 25px;
+    width: 160vh;
+    height: 90vh;
+  }
+  .textActionMobile {
+    font-family: 'Montserrat';
+    font-size: 2.2rem;
+    margin: 25px;
+    text-align: center;
+  }
+}
