@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/allgym/static/css/main.1512ac71.css",
-    "main.js": "/allgym/static/js/main.ac421452.js",
-    "static/media/Three.png": "/allgym/static/media/Three.3e9a3e1551d6c63f6e09.png",
-    "static/media/Sauna.png": "/allgym/static/media/Sauna.277c308baa2f79187397.png",
-    "static/media/Action.png": "/allgym/static/media/Action.1dd5c49e21a8474dd564.png",
-    "static/media/Pool.png": "/allgym/static/media/Pool.59149666baf1fe608927.png",
-    "static/media/Yoga.png": "/allgym/static/media/Yoga.a93ebbade0a902b5c87b.png",
-    "static/media/First.png": "/allgym/static/media/First.087a31e620553e539722.png",
-    "static/media/Second.png": "/allgym/static/media/Second.13f4e421cc94c2ece323.png",
-    "static/media/Run.png": "/allgym/static/media/Run.e6ce785087ad723fc1db.png",
-    "static/media/CrossFit.png": "/allgym/static/media/CrossFit.ee9734f20a88dc93cd3d.png",
-    "static/media/FeartMan.png": "/allgym/static/media/FeartMan.6c0e9654a5d2a64c4de8.png",
-    "static/media/Group.png": "/allgym/static/media/Group.1fff7dded35e3727a423.png",
+    "main.css": "/allgym/static/css/main.36061536.css",
+    "main.js": "/allgym/static/js/main.aa1396fc.js",
+    "static/media/Three.png": "/allgym/static/media/Three.8f91f28fbd4f04afb4a1.png",
+    "static/media/Sauna.png": "/allgym/static/media/Sauna.a6d2bd83be96dec4748f.png",
+    "static/media/Action.png": "/allgym/static/media/Action.1b0c8c6e69238060f61b.png",
+    "static/media/First.png": "/allgym/static/media/First.c8da6aa1ba4ecfa168da.png",
+    "static/media/Yoga.png": "/allgym/static/media/Yoga.d224c9abbe1b15f6bc12.png",
+    "static/media/Pool.png": "/allgym/static/media/Pool.4fc7fc88d3733bfd7b2e.png",
+    "static/media/Second.png": "/allgym/static/media/Second.cefb1e92708ab84c4199.png",
+    "static/media/Run.png": "/allgym/static/media/Run.63eebe6e5e03f891d854.png",
+    "static/media/CrossFit.png": "/allgym/static/media/CrossFit.8c189d925c8a6d5f4414.png",
+    "static/media/FeartMan.png": "/allgym/static/media/FeartMan.36a91b3267f6e49284e0.png",
+    "static/media/Group.png": "/allgym/static/media/Group.9d2a3f17a614e3d0ebc7.png",
     "index.html": "/allgym/index.html",
-    "main.1512ac71.css.map": "/allgym/static/css/main.1512ac71.css.map",
-    "main.ac421452.js.map": "/allgym/static/js/main.ac421452.js.map"
+    "main.36061536.css.map": "/allgym/static/css/main.36061536.css.map",
+    "main.aa1396fc.js.map": "/allgym/static/js/main.aa1396fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.1512ac71.css",
-    "static/js/main.ac421452.js"
+    "static/css/main.36061536.css",
+    "static/js/main.aa1396fc.js"
   ]
 }
