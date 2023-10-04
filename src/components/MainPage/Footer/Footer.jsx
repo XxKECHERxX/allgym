@@ -20,7 +20,6 @@ const NavBar = () => {
           <li onClick={handlerScrollToAdress} style={{ cursor: 'pointer' }}>
             Адрес и Контакты
           </li>
-          <li style={{ cursor: 'text' }}>+7 (999) 000-00-00</li>
         </ul>
 
         <div className={styles.linksCo}>

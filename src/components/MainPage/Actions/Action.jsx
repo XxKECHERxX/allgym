@@ -124,40 +124,88 @@ const Actions = () => {
 
       {/*Мобильная версия*/}
       <div className={styles.frameActionMobile}>
-        <div className={styles.imgOfActionMobile}>
+        <div
+          className={styles.imgOfActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${positionX}px)`,
+          }}
+        >
           <img src={Action} alt="Action" />
         </div>
-        <div className={styles.textActionMobile}>
+        <div
+          className={styles.textActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${-positionX}px)`,
+          }}
+        >
           Готовьтесь к новому уровню подготовки! Наша кроссфит-зона была создана
           с целью помочь вам достичь максимальных результатов в тренировках.
         </div>
       </div>
 
       <div className={styles.frameActionMobile}>
-        <div className={styles.imgOfActionMobile}>
+        <div
+          className={styles.imgOfActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${positionX}px)`,
+          }}
+        >
           <img src={Yoga} alt="Yoga" />
         </div>
-        <div className={styles.textActionMobile}>
+        <div
+          className={styles.textActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${-positionX}px)`,
+          }}
+        >
           Программа йоги включает в себя разнообразные упражнения, начиная от
           повышения гибкости до улучшения дыхательной системы.
         </div>
       </div>
 
       <div className={styles.frameActionMobile}>
-        <div className={styles.imgOfActionMobile}>
+        <div
+          className={styles.imgOfActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${positionX}px)`,
+          }}
+        >
           <img src={Sauna} alt="Sauna" />
         </div>
-        <div className={styles.textActionMobile}>
+        <div
+          className={styles.textActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${-positionX}px)`,
+          }}
+        >
           Найдите время, чтобы восстановиться с помощью наших оздоровительных
           спа-услуг.
         </div>
       </div>
 
       <div className={styles.frameActionMobile}>
-        <div className={styles.imgOfActionMobile}>
+        <div
+          className={styles.imgOfActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${positionX}px)`,
+          }}
+        >
           <img src={Pool} alt="Pool" />
         </div>
-        <div className={styles.textActionMobile}>
+        <div
+          className={styles.textActionMobile}
+          style={{
+            transitionDuration: `${transDuration}ms`,
+            transform: `translateX(${-positionX}px)`,
+          }}
+        >
           Мы предлагаем профессиональные уроки, индивидуальные занятия, а также
           время для свободного плавания.
         </div>

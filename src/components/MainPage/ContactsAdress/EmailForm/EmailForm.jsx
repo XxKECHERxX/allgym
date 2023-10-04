@@ -15,7 +15,7 @@ const EmailForm = () => {
         <p className={styles.submitClientEmail}>Приглашение уже на почте!</p>
       ) : (
         <form className={styles.formInput}>
-            Оставайся на связи:
+          Оставайся на связи:
           <label>
             <input className={styles.emailInput} placeholder="email" />
           </label>

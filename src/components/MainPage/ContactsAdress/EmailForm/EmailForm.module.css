@@ -1,5 +1,4 @@
 .emailForm {
-  height: 75px;
   min-width: 100%;
   background-color: #242121;
   display: grid;
@@ -44,8 +43,8 @@
 }
 
 .btnSubmit {
-  width: 120px;
-  height: 30px;
+  width: calc(auto + 15px);
+  height: calc(auto + 15px);
   border-radius: 5px;
   background: #7e0000;
   border: 0;
@@ -80,5 +79,28 @@
   }
   .btnSubmit {
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .formInput {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .emailForm {
+    font-size: 2.2rem;
+  }
+  .emailInput {
+    width: 150vh;
+    height: 12vh;
+    font-size: 2.2rem;
+  }
+  .btnSubmit {
+    width: 50vh;
+    height: 12vh;
+    margin-top: 25px 0;
+    font-size: 2.2rem;
   }
 }

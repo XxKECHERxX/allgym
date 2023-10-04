@@ -15,7 +15,7 @@ const AdressMap = () => {
           <iframe
             title="GoogleMap"
             style={{
-              width: '700px',
+              width: '1000px',
               height: '350px',
               border: '0px',
             }}
