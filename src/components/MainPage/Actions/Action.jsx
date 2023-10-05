@@ -1,8 +1,8 @@
 import styles from './Action.module.css'
-import Action from '../photos/Action.png'
-import Yoga from '../photos/Yoga.png'
-import Sauna from '../photos/Sauna.png'
-import Pool from '../photos/Pool.png'
+import Action from '../photos/Action.jpg'
+import Yoga from '../photos/Yoga.jpg'
+import Sauna from '../photos/Sauna.jpg'
+import Pool from '../photos/Pool.jpg'
 import LineRedVert from '../../UI/RedLines/LineRedVert'
 import { useState, useEffect } from 'react'
 
