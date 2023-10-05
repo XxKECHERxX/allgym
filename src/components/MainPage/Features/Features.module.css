@@ -37,6 +37,19 @@
 }
 
 @media screen and (max-width: 744px) {
+  .featuresContainer {
+    display: none;
+  }
+  .featuresContainerMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    width: auto;
+    overflow: hidden;
+
+    transition-timing-function: ease-in-out;
+  }
   .frameText {
     font-size: 1.2rem;
   }

@@ -9,27 +9,27 @@ import { useState, useEffect } from 'react'
 const transDuration = 2000
 
 const Actions = () => {
-  // const [scrollTop, setScrollTop] = useState(0)
+  const [scrollTop, setScrollTop] = useState(0)
 
-  // const positionX = scrollTop <= 500 ? 500 - scrollTop : 0
+  const positionX = scrollTop <= 700 ? 700 - scrollTop : 0
 
-  // const handleScroll = (event) => {
-  //   setScrollTop(window.scrollY)
-  // }
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll)
-  //   }
-  // }, [])
-
-  const [positionXver2, setPositionXver2] = useState(500)
+  const handleScroll = (event) => {
+    setScrollTop(window.scrollY)
+  }
 
   useEffect(() => {
-    setTimeout(() => setPositionXver2(0), 500)
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
+
+  // const [positionXver, setPositionX] = useState(500)
+
+  // useEffect(() => {
+  //   setTimeout(() => setPositionX(0), 500)
+  // }, [])
 
   return (
     <>
@@ -39,7 +39,7 @@ const Actions = () => {
             className={styles.textAction}
             style={{
               transitionDuration: `${transDuration}ms`,
-              transform: `translateX(${-positionXver2}px)`,
+              transform: `translateX(${-positionX}px)`,
             }}
           >
             Готовьтесь к новому уровню подготовки! Наша кроссфит-зона была
@@ -51,7 +51,7 @@ const Actions = () => {
             className={styles.imgOfAction}
             style={{
               transitionDuration: `${transDuration}ms`,
-              transform: `translateX(${positionXver2}px)`,
+              transform: `translateX(${positionX}px)`,
             }}
           >
             <img src={Action} alt="Action" />
@@ -63,7 +63,7 @@ const Actions = () => {
             className={styles.imgOfAction}
             style={{
               transitionDuration: `${transDuration * 1.25}ms`,
-              transform: `translateX(${-positionXver2}px)`,
+              transform: `translateX(${-positionX}px)`,
             }}
           >
             <img src={Yoga} alt="Yoga" />
@@ -73,7 +73,7 @@ const Actions = () => {
             className={styles.textAction}
             style={{
               transitionDuration: `${transDuration * 1.5}ms`,
-              transform: `translateX(${positionXver2}px)`,
+              transform: `translateX(${positionX}px)`,
             }}
           >
             Программа йоги включает в себя разнообразные упражнения, начиная от
@@ -86,7 +86,7 @@ const Actions = () => {
             className={styles.textAction}
             style={{
               transitionDuration: `${transDuration * 1.75}ms`,
-              transform: `translateX(${-positionXver2}px)`,
+              transform: `translateX(${-positionX}px)`,
             }}
           >
             Найдите время, чтобы восстановиться с помощью наших оздоровительных
@@ -97,7 +97,7 @@ const Actions = () => {
             className={styles.imgOfAction}
             style={{
               transitionDuration: `${transDuration * 2}ms`,
-              transform: `translateX(${positionXver2}px)`,
+              transform: `translateX(${positionX}px)`,
             }}
           >
             <img src={Sauna} alt="Sauna" />
@@ -109,7 +109,7 @@ const Actions = () => {
             className={styles.imgOfAction}
             style={{
               transitionDuration: `${transDuration * 2}ms`,
-              transform: `translateX(${-positionXver2}px)`,
+              transform: `translateX(${-positionX}px)`,
             }}
           >
             <img src={Pool} alt="Pool" />
@@ -119,7 +119,7 @@ const Actions = () => {
             className={styles.textAction}
             style={{
               transitionDuration: `${transDuration * 2}ms`,
-              transform: `translateX(${positionXver2}px)`,
+              transform: `translateX(${positionX}px)`,
             }}
           >
             Мы предлагаем профессиональные уроки, индивидуальные занятия, а
@@ -134,7 +134,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionXver2}px)`,
+            transform: `translateX(${positionX}px)`,
           }}
         >
           <img src={Action} alt="Action" />
@@ -143,7 +143,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionXver2}px)`,
+            transform: `translateX(${-positionX}px)`,
           }}
         >
           Готовьтесь к новому уровню подготовки! Наша кроссфит-зона была создана
@@ -156,7 +156,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionXver2}px)`,
+            transform: `translateX(${positionX}px)`,
           }}
         >
           <img src={Yoga} alt="Yoga" />
@@ -165,7 +165,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionXver2}px)`,
+            transform: `translateX(${-positionX}px)`,
           }}
         >
           Программа йоги включает в себя разнообразные упражнения, начиная от
@@ -178,7 +178,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionXver2}px)`,
+            transform: `translateX(${positionX}px)`,
           }}
         >
           <img src={Sauna} alt="Sauna" />
@@ -187,7 +187,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionXver2}px)`,
+            transform: `translateX(${-positionX}px)`,
           }}
         >
           Найдите время, чтобы восстановиться с помощью наших оздоровительных
@@ -200,7 +200,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionXver2}px)`,
+            transform: `translateX(${positionX}px)`,
           }}
         >
           <img src={Pool} alt="Pool" />
@@ -209,7 +209,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionXver2}px)`,
+            transform: `translateX(${-positionX}px)`,
           }}
         >
           Мы предлагаем профессиональные уроки, индивидуальные занятия, а также

@@ -55,7 +55,7 @@
     font-size: 2.2rem;
   }
   .mapFrame {
-    margin: 25px;
+    margin-bottom: 50px;
     width: 150vh;
   }
 }
