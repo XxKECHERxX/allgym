@@ -25,7 +25,7 @@ const Actions = () => {
     }
   }, [])
 
-  const [positionXverMob, setPositionXverMob] = useState(500)
+  const [positionXverMob, setPositionXverMob] = useState(1000)
 
   useEffect(() => {
     setTimeout(() => setPositionXverMob(0), 500)
@@ -139,6 +139,9 @@ const Actions = () => {
         >
           <img src={Action} alt="Action" />
         </div>
+        <div className={styles.LineRedVert}>
+          <LineRedVert />
+        </div>
         <div
           className={styles.textActionMobile}
           style={{
@@ -160,6 +163,9 @@ const Actions = () => {
           }}
         >
           <img src={Yoga} alt="Yoga" />
+        </div>
+        <div className={styles.LineRedVert}>
+          <LineRedVert />
         </div>
         <div
           className={styles.textActionMobile}
@@ -183,6 +189,9 @@ const Actions = () => {
         >
           <img src={Sauna} alt="Sauna" />
         </div>
+        <div className={styles.LineRedVert}>
+          <LineRedVert />
+        </div>
         <div
           className={styles.textActionMobile}
           style={{
@@ -204,6 +213,9 @@ const Actions = () => {
           }}
         >
           <img src={Pool} alt="Pool" />
+        </div>
+        <div className={styles.LineRedVert}>
+          <LineRedVert />
         </div>
         <div
           className={styles.textActionMobile}

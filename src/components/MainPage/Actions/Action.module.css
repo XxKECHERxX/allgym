@@ -31,7 +31,25 @@
 }
 
 @media only screen and (max-width: 576px) and (min-width: 376px) {
-  .textAction {
+  .frameActionBigVer {
+    display: none;
+  }
+  .frameActionMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    padding: 25px;
+    overflow: hidden;
+  }
+  .imgOfActionMobile img {
+    width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+    border-radius: 20px;
+  }
+  .textActionMobile {
     font-size: 1.3rem;
   }
 }
@@ -47,6 +65,10 @@
     align-items: center;
     margin: 25px;
     padding-top: 25px;
+    overflow: hidden;
+  }
+  .LineRedVert {
+    display: none;
   }
   .imgOfActionMobile img {
     border-radius: 25px;

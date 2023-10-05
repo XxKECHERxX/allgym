@@ -56,6 +56,19 @@
 }
 
 @media only screen and (max-width: 576px) and (min-width: 376px) {
+  .featuresContainer {
+    display: none;
+  }
+  .featuresContainerMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    width: auto;
+    overflow: hidden;
+
+    transition-timing-function: ease-in-out;
+  }
   .frameText {
     padding-top: 25px;
     font-size: 1.5rem;
@@ -72,6 +85,7 @@
     grid-template-rows: 1fr 1fr;
     justify-self: center;
     margin: 25px;
+    overflow: hidden;
   }
   .frameFeatures {
     width: auto;
