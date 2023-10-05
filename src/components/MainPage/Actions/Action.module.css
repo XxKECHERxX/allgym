@@ -24,19 +24,19 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 744px) {
+@media only screen and (max-width: 744px) and (min-width: 576px) {
   .textAction {
     font-size: 1.15rem;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (min-width: 376px) {
   .textAction {
     font-size: 1.3rem;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .frameActionBigVer {
     display: none;
   }

@@ -36,7 +36,7 @@
   line-height: normal;
 }
 
-@media screen and (max-width: 744px) {
+@media only screen and (max-width: 744px) and (min-width: 576px) {
   .featuresContainer {
     display: none;
   }
@@ -55,14 +55,14 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) and (min-width: 376px) {
   .frameText {
     padding-top: 25px;
     font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media only screen and (max-width: 376px) {
   .featuresContainer {
     display: none;
   }

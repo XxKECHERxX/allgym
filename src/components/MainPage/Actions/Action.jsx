@@ -25,11 +25,11 @@ const Actions = () => {
     }
   }, [])
 
-  // const [positionXver, setPositionX] = useState(500)
+  const [positionXverMob, setPositionXverMob] = useState(500)
 
-  // useEffect(() => {
-  //   setTimeout(() => setPositionX(0), 500)
-  // }, [])
+  useEffect(() => {
+    setTimeout(() => setPositionXverMob(0), 500)
+  }, [])
 
   return (
     <>
@@ -134,7 +134,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionX}px)`,
+            transform: `translateX(${positionXverMob}px)`,
           }}
         >
           <img src={Action} alt="Action" />
@@ -143,7 +143,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionX}px)`,
+            transform: `translateX(${-positionXverMob}px)`,
           }}
         >
           Готовьтесь к новому уровню подготовки! Наша кроссфит-зона была создана
@@ -156,7 +156,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionX}px)`,
+            transform: `translateX(${positionXverMob}px)`,
           }}
         >
           <img src={Yoga} alt="Yoga" />
@@ -165,7 +165,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionX}px)`,
+            transform: `translateX(${-positionXverMob}px)`,
           }}
         >
           Программа йоги включает в себя разнообразные упражнения, начиная от
@@ -178,7 +178,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionX}px)`,
+            transform: `translateX(${positionXverMob}px)`,
           }}
         >
           <img src={Sauna} alt="Sauna" />
@@ -187,7 +187,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionX}px)`,
+            transform: `translateX(${-positionXverMob}px)`,
           }}
         >
           Найдите время, чтобы восстановиться с помощью наших оздоровительных
@@ -200,7 +200,7 @@ const Actions = () => {
           className={styles.imgOfActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${positionX}px)`,
+            transform: `translateX(${positionXverMob}px)`,
           }}
         >
           <img src={Pool} alt="Pool" />
@@ -209,7 +209,7 @@ const Actions = () => {
           className={styles.textActionMobile}
           style={{
             transitionDuration: `${transDuration}ms`,
-            transform: `translateX(${-positionX}px)`,
+            transform: `translateX(${-positionXverMob}px)`,
           }}
         >
           Мы предлагаем профессиональные уроки, индивидуальные занятия, а также
