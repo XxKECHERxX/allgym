@@ -1,8 +1,8 @@
 import styles from './Features.module.css'
-import Second from '../photos/Second.png'
-import FeartMan from '../photos/FeartMan.png'
-import CrossFit from '../photos/CrossFit.png'
-import Group from '../photos/Group.png'
+import Second from '../photos/Second.jpg'
+import FeartMan from '../photos/FeartMan.jpg'
+import CrossFit from '../photos/CrossFit.jpg'
+import Group from '../photos/Group.jpg'
 import LineRedHorr from '../../UI/RedLines/LineRedHorr'
 import { useEffect, useState } from 'react'
 
