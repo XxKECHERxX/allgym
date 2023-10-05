@@ -51,6 +51,7 @@
   }
   .textActionMobile {
     font-size: 1.3rem;
+    z-index: -5;
   }
 }
 
