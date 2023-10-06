@@ -47,12 +47,13 @@
 @media screen and (max-width: 744px) {
   .NavBar {
     display: grid;
+    height: 100px;
     grid-template-columns: 1fr 11fr 1fr;
   }
   .logo {
     grid-column-start: 2;
     justify-self: center;
-    font-size: 2.8rem;
+    font-size: 4rem;
   }
   .menu {
     display: none;
@@ -73,7 +74,7 @@
   }
 
   .menuPoints div {
-    height: 50px;
+    height: 75px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -83,25 +84,31 @@
     border-bottom: 1px solid #000;
     background: #7e0000;
     color: aliceblue;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     font-family: 'Montserrat';
   }
 
   .menuPointsNumber {
-    border-left: 1px solid #7e0000;
+    border-left: 2px solid #7e0000;
     background: #0c0909;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .NavBar {
+    display: grid;
+    height: 125px;
+    grid-template-columns: 1fr 11fr 1fr;
+  }
   .logo {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .menu {
     display: none;
   }
   .menuPoints div {
-    font-size: 1.8rem;
+    height: 100px;
+    font-size: 2.8rem;
   }
 }
 
@@ -110,13 +117,13 @@
     height: 150px;
   }
   .logo {
-    font-size: 4.4rem;
+    font-size: 6rem;
   }
   .menu {
     display: none;
   }
   .menuPoints div {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     height: 100px;
   }
 }
