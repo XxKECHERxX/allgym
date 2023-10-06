@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/allgym/static/css/main.a564dc9c.css",
+    "main.css": "/allgym/static/css/main.a8bc6221.css",
     "main.js": "/allgym/static/js/main.281f724c.js",
     "static/media/Three.jpg": "/allgym/static/media/Three.b13803e2c16fbe52345f.jpg",
     "static/media/Sauna.jpg": "/allgym/static/media/Sauna.137bbbcd47551d33a38a.jpg",
@@ -14,11 +14,11 @@
     "static/media/Group.jpg": "/allgym/static/media/Group.5af70ca321a6ca05ad0b.jpg",
     "static/media/FeartMan.jpg": "/allgym/static/media/FeartMan.2fcb6fa3fc4b2c0982ba.jpg",
     "index.html": "/allgym/index.html",
-    "main.a564dc9c.css.map": "/allgym/static/css/main.a564dc9c.css.map",
+    "main.a8bc6221.css.map": "/allgym/static/css/main.a8bc6221.css.map",
     "main.281f724c.js.map": "/allgym/static/js/main.281f724c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a564dc9c.css",
+    "static/css/main.a8bc6221.css",
     "static/js/main.281f724c.js"
   ]
 }
