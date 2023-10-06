@@ -75,6 +75,13 @@
 
     transition-timing-function: ease-in-out;
   }
+    .frameFeatures img {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 40vh;
+    justify-content: center;
+    align-items: center;
+  }
   .frameText {
     padding-top: 25px;
     align-self: center;
