@@ -23,7 +23,7 @@ const MainPage = () => {
   return (
     <>
       {openMdleWindow && <FormReg clickBtnClose={handlerBtnClose} />}
-      <div className={styles.pageNormal}>
+      <div className={styles.pageCommon}>
         <NavBar setTestDrive={handlerTestDrive} />
         <Slider />
         <Features />

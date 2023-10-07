@@ -51,17 +51,23 @@
   font-weight: 100;
 }
 
-@media screen and (max-width: 376px) {
-  .slider {
-    height: 100vh;
+@media screen and (max-width: 744px) {
+  .sliderImg {
+    max-width: 550px;
+    padding-bottom: 0;
   }
   .sliderImg img {
-    height: 100vh;
+    border-radius: 10px;
+    height: 345px;
+    width: 550px;
+    padding: 0px 2px;
   }
   .buttonLeft {
-    font-size: 10rem;
+    width: 90px;
+    font-size: 4rem;
   }
   .buttonRight {
-    font-size: 10rem;
+    width: 90px;
+    font-size: 4rem;
   }
 }

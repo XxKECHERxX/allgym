@@ -30,32 +30,21 @@
 }
 
 @media screen and (max-width: 744px) {
-  .adressContacts {
-    font-size: 1.15rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .adressContacts {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
   .frameAdressMap {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  .adressContacts {
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    width: 100vh;
-    font-size: 2.2rem;
+    width: auto;
+    padding: 25px;
   }
   .mapFrame {
-    margin-bottom: 50px;
-    width: 150vh;
+    width: 450px;
+    height: 230px;
+  }
+  .adressContacts {
+    height: auto;
+    width: 200px;
+    padding-right: 25px;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
   }
 }

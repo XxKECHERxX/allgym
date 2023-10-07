@@ -131,7 +131,7 @@ const Actions = () => {
       {/*Мобильная версия*/}
       <div className={styles.frameActionMobile}>
         <div
-          className={styles.imgOfActionMobile}
+          className={styles.imgOfAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${positionXverMob}px)`,
@@ -143,7 +143,7 @@ const Actions = () => {
           <LineRedVert />
         </div>
         <div
-          className={styles.textActionMobile}
+          className={styles.textAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${-positionXverMob}px)`,
@@ -156,7 +156,7 @@ const Actions = () => {
 
       <div className={styles.frameActionMobile}>
         <div
-          className={styles.imgOfActionMobile}
+          className={styles.imgOfAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${positionXverMob}px)`,
@@ -168,7 +168,7 @@ const Actions = () => {
           <LineRedVert />
         </div>
         <div
-          className={styles.textActionMobile}
+          className={styles.textAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${-positionXverMob}px)`,
@@ -181,7 +181,7 @@ const Actions = () => {
 
       <div className={styles.frameActionMobile}>
         <div
-          className={styles.imgOfActionMobile}
+          className={styles.imgOfAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${positionXverMob}px)`,
@@ -193,7 +193,7 @@ const Actions = () => {
           <LineRedVert />
         </div>
         <div
-          className={styles.textActionMobile}
+          className={styles.textAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${-positionXverMob}px)`,
@@ -206,7 +206,7 @@ const Actions = () => {
 
       <div className={styles.frameActionMobile}>
         <div
-          className={styles.imgOfActionMobile}
+          className={styles.imgOfAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${positionXverMob}px)`,
@@ -218,7 +218,7 @@ const Actions = () => {
           <LineRedVert />
         </div>
         <div
-          className={styles.textActionMobile}
+          className={styles.textAction}
           style={{
             transitionDuration: `${transDuration}ms`,
             transform: `translateX(${-positionXverMob}px)`,

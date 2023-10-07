@@ -2,7 +2,14 @@ import styles from './Slider.module.css'
 import photosGymList from './photosGymList'
 import { useEffect, useState } from 'react'
 
-const IMG_WIDTH = 860
+let IMG_WIDTH = 860
+
+if (window.innerWidth <= '744') {
+  IMG_WIDTH = 554
+}
+
+console.log(IMG_WIDTH)
+
 const TRANSITION_DURATION = 350
 
 const listExtend = [

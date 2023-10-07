@@ -1,5 +1,22 @@
-.pageNormal {
+.pageCommon {
   width: 1150px;
   margin: auto;
-  padding: 25px 0px;
+}
+
+@media screen and (max-width: 744px) {
+  .pageCommon {
+    max-width: 744px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pageCommon {
+    max-width: 576px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .pageCommon {
+    max-width: 376px;
+  }
 }

@@ -2,3 +2,9 @@
   margin: auto 50px;
   width: 3px;
 }
+
+@media screen and (max-width: 744px) {
+  .lineRedVert {
+    margin: auto 30px;
+  }
+}

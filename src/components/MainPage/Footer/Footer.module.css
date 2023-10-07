@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 100px;
+  height: 75px;
   margin: 25px 0;
 }
 
@@ -59,40 +59,6 @@
 
 @media screen and (max-width: 744px) {
   .logo {
-    font-size: 2.4rem;
-  }
-  .menu {
-    font-size: 1.2rem;
-  }
-  .linksCo a {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .menu {
-    font-size: 1.4rem;
-  }
-  .linksCo a {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .logo {
-    font-size: 4.4rem;
-  }
-  .menu {
-    font-size: 2.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .linksCo {
-    height: auto;
-  }
-  .linksCo a {
-    margin: 25px;
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }

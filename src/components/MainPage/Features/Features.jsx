@@ -34,7 +34,7 @@ const Features = () => {
   return (
     <>
       <LineRedHorr />
-      <div className={styles.featuresContainer}>
+      <section className={styles.featuresContainer}>
         <div
           className={styles.frameFeatures}
           style={{
@@ -81,10 +81,10 @@ const Features = () => {
             Групповые занятия и кроссфит зоны
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Планшетная и Мобильная версия */}
-      <div className={styles.featuresContainerMobile}>
+      <section className={styles.featuresContainerMobile}>
         <div
           className={styles.frameFeatures}
           style={{
@@ -131,7 +131,7 @@ const Features = () => {
             Групповые занятия и кроссфит зоны
           </div>
         </div>
-      </div>
+      </section>
       <LineRedHorr />
     </>
   )

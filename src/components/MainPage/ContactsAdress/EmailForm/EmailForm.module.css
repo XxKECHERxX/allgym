@@ -61,48 +61,13 @@
 
 @media screen and (max-width: 744px) {
   .emailForm {
-    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 90px 1fr 90px;
+    font-size: 1rem;
   }
   .emailInput {
-    font-size: 1.2rem;
-  }
-  .btnSubmit {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .emailForm {
-    font-size: 1.4rem;
-  }
-  .emailInput {
-    font-size: 1.4rem;
-  }
-  .btnSubmit {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .formInput {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25px 0;
-  }
-  .emailForm {
-    font-size: 2.2rem;
-    width: 100%;
-  }
-  .emailInput {
-    width: 150vh;
-    height: 12vh;
-    font-size: 2.2rem;
-  }
-  .btnSubmit {
-    width: 50vh;
-    height: 12vh;
-    margin-top: 25px 0;
-    font-size: 2.2rem;
+    height: 30px;
+    width: 250px;
+    margin: 10px;
   }
 }
