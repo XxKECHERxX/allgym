@@ -33,7 +33,7 @@
 
 .emailInput {
   height: 30px;
-  width: 350px;
+  max-width: 350px;
   margin: 20px;
   border: 2px solid #740202;
   border-radius: 5px;
@@ -67,7 +67,47 @@
   }
   .emailInput {
     height: 30px;
-    width: 250px;
+    max-width: 250px;
     margin: 10px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .emailForm {
+    grid-template-columns: 45px 1fr 45px;
+  }
+  .emailInput {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .emailForm {
+    grid-template-columns: 45px 1fr 45px;
+    font-size: 0.8rem;
+  }
+  .emailInput {
+    max-width: 200px;
+    font-size: 0.8rem;
+  }
+  .btnSubmit {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .emailForm {
+    font-size: 0.7rem;
+  }
+  .formInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .emailInput {
+    max-width: 250px;
+    font-size: 0.7rem;
+  }
+  .btnSubmit {
+    font-size: 0.7rem;
   }
 }

@@ -18,20 +18,66 @@
 }
 
 .imgOfAction img {
-  width: 500px;
-  min-height: 300px;
+  max-width: 500px;
   max-height: 300px;
   border-radius: 20px;
 }
 
 @media screen and (max-width: 744px) {
+  .frameAction {
+    display: none;
+  }
+  .frameActionMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    padding: 25px;
+    overflow: hidden;
+  }
   .imgOfAction img {
     width: 325px;
-    min-height: 190px;
     max-height: 190px;
     border-radius: 20px;
   }
   .textAction {
+    z-index: -5;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .frameActionMobile {
+    padding: 20px;
+  }
+  .imgOfAction img {
+    width: 270px;
+    max-height: 170px;
+    border-radius: 10px;
+  }
+  .textAction {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .frameActionMobile {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .LineRedVertMobile {
+    display: none;
+  }
+  .imgOfAction img {
+    width: 280px;
+    max-height: 170px;
+    border-radius: 10px;
+  }
+  .textAction {
+    max-width: 260px;
+    margin-top: 5px;
+    font-size: 0.7rem;
+    text-align: justify;
   }
 }

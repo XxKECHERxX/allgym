@@ -139,7 +139,7 @@ const Actions = () => {
         >
           <img src={Action} alt="Action" />
         </div>
-        <div className={styles.LineRedVert}>
+        <div className={styles.LineRedVertMobile}>
           <LineRedVert />
         </div>
         <div
@@ -164,7 +164,7 @@ const Actions = () => {
         >
           <img src={Yoga} alt="Yoga" />
         </div>
-        <div className={styles.LineRedVert}>
+        <div className={styles.LineRedVertMobile}>
           <LineRedVert />
         </div>
         <div
@@ -189,7 +189,7 @@ const Actions = () => {
         >
           <img src={Sauna} alt="Sauna" />
         </div>
-        <div className={styles.LineRedVert}>
+        <div className={styles.LineRedVertMobile}>
           <LineRedVert />
         </div>
         <div
@@ -214,7 +214,7 @@ const Actions = () => {
         >
           <img src={Pool} alt="Pool" />
         </div>
-        <div className={styles.LineRedVert}>
+        <div className={styles.LineRedVertMobile}>
           <LineRedVert />
         </div>
         <div

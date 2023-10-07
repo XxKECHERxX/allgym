@@ -1,5 +1,6 @@
 .slider {
   display: flex;
+  width: auto;
   overflow: hidden;
   padding-bottom: 25px;
 }
@@ -58,16 +59,60 @@
   }
   .sliderImg img {
     border-radius: 10px;
-    height: 345px;
-    width: 550px;
+    max-height: 345px;
+    max-width: 550px;
     padding: 0px 2px;
   }
   .buttonLeft {
-    width: 90px;
+    max-width: 90px;
     font-size: 4rem;
   }
   .buttonRight {
-    width: 90px;
+    max-width: 90px;
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sliderImg {
+    max-width: 425px;
+    max-height: 260px;
+    padding-bottom: 0;
+  }
+  .sliderImg img {
+    border-radius: 10px;
+    max-width: 420px;
+    max-height: 260px;
+    padding: 0px 2px;
+  }
+  .buttonLeft {
+    max-width: 45px;
+    font-size: 4rem;
+  }
+  .buttonRight {
+    max-width: 45px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .slider {
+    padding-bottom: 10px;
+  }
+  .sliderImg {
+    max-width: 280px;
+    max-height: 170px;
+    padding-bottom: 0;
+  }
+  .sliderImg img {
+    border-radius: 10px;
+    max-width: 280px;
+    max-height: 170px;
+    padding: 0px 2px;
+  }
+  .buttonLeft {
+    font-size: 3.5rem;
+  }
+  .buttonRight {
+    font-size: 3.5rem;
   }
 }

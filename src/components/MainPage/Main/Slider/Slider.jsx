@@ -2,13 +2,19 @@ import styles from './Slider.module.css'
 import photosGymList from './photosGymList'
 import { useEffect, useState } from 'react'
 
-let IMG_WIDTH = 860
-
-if (window.innerWidth <= '744') {
+let IMG_WIDTH
+if (window.innerWidth >= '744') {
+  IMG_WIDTH = 860
+}
+if (window.innerWidth <= '744' && window.innerWidth >= '576') {
   IMG_WIDTH = 554
 }
-
-console.log(IMG_WIDTH)
+if (window.innerWidth <= '576' && window.innerWidth >= '376') {
+  IMG_WIDTH = 422
+}
+if (window.innerWidth <= '376') {
+  IMG_WIDTH = 284
+}
 
 const TRANSITION_DURATION = 350
 
