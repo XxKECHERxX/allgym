@@ -33,7 +33,7 @@
 
 .emailInput {
   height: 30px;
-  max-width: 350px;
+  width: 300px;
   margin: 20px;
   border: 2px solid #740202;
   border-radius: 5px;
@@ -59,43 +59,45 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .emailForm {
     display: grid;
     grid-template-columns: 90px 1fr 90px;
     font-size: 1rem;
   }
   .emailInput {
-    height: 30px;
-    max-width: 250px;
-    margin: 10px;
+    width: 250px;
+    margin: 15px;
   }
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 760px) {
   .emailForm {
     grid-template-columns: 45px 1fr 45px;
+    font-size: 0.9rem;
   }
   .emailInput {
-    max-width: 200px;
+    width: 220px;
+    font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
   .emailForm {
     grid-template-columns: 45px 1fr 45px;
     font-size: 0.8rem;
   }
   .emailInput {
-    max-width: 200px;
+    width: 200px;
     font-size: 0.8rem;
   }
   .btnSubmit {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .emailForm {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    grid-template-columns: 35px 1fr 35px;
   }
   .formInput {
     display: flex;
@@ -104,7 +106,7 @@
     margin: 10px 0;
   }
   .emailInput {
-    max-width: 250px;
+    width: 250px;
     font-size: 0.7rem;
   }
   .btnSubmit {

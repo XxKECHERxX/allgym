@@ -6,14 +6,17 @@ let IMG_WIDTH
 if (window.innerWidth >= '744') {
   IMG_WIDTH = 860
 }
-if (window.innerWidth <= '744' && window.innerWidth >= '576') {
-  IMG_WIDTH = 554
+if (window.innerWidth <= '900' && window.innerWidth >= '761') {
+  IMG_WIDTH = 675
 }
-if (window.innerWidth <= '576' && window.innerWidth >= '376') {
-  IMG_WIDTH = 422
+if (window.innerWidth <= '760' && window.innerWidth >= '591') {
+  IMG_WIDTH = 669
 }
-if (window.innerWidth <= '376') {
-  IMG_WIDTH = 284
+if (window.innerWidth <= '590' && window.innerWidth >= '477') {
+  IMG_WIDTH = 500
+}
+if (window.innerWidth <= '476') {
+  IMG_WIDTH = 386
 }
 
 const TRANSITION_DURATION = 350

@@ -25,7 +25,7 @@ const Features = () => {
     }
   }, [])
 
-  const [positionYver2, setPositionYver2] = useState(1200)
+  const [positionYver2, setPositionYver2] = useState(1000)
 
   useEffect(() => {
     setTimeout(() => setPositionYver2(0), 500)

@@ -8,62 +8,58 @@
 .frameAdressMap {
   display: flex;
   width: auto;
-  padding: 50px;
+  padding: 25px;
 }
 
 .adressContacts {
-  max-width: 300px;
+  width: auto;
   height: auto;
-  padding-right: 50px;
 
   font-family: 'Montserrat';
   font-size: 1rem;
 }
 
 .mapFrame {
-  max-width: 700px;
-  max-height: 350px;
+  width: 700px;
+  height: 300px;
   border-radius: 20px;
+  margin-left: 25px;
   overflow: hidden;
   opacity: 0.8;
   border: solid 1px;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
+  .mapFrame {
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .frameAdressMap {
     display: flex;
     width: auto;
-    padding: 25px;
+    padding: 20px;
   }
   .mapFrame {
-    max-width: 450px;
-    max-height: 230px;
+    width: 420px;
+    height: 200px;
   }
   .adressContacts {
-    height: auto;
-    max-width: 200px;
-    padding-right: 25px;
-
-    font-family: 'Montserrat';
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 576px) {
-  .frameAdressMap {
-    padding: 15px;
-  }
+@media screen and (max-width: 590px) {
   .mapFrame {
     max-width: 350px;
     max-height: 180px;
   }
   .adressContacts {
-    max-width: 150px;
-    padding-right: 15px;
-
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .frameAdressMap {
     display: flex;
     flex-direction: column;
@@ -71,12 +67,13 @@
     padding: 0px;
   }
   .mapFrame {
-    max-width: 280px;
-    max-height: 140px;
+    margin: auto;
+    width: 280px;
+    height: 140px;
     margin-bottom: 10px;
   }
   .adressContacts {
-    max-width: 200px;
+    width: 200px;
     font-size: 0.7rem;
     text-align: center;
   }

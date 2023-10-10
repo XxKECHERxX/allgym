@@ -1,4 +1,5 @@
 .slider {
+  position: relative;
   display: flex;
   width: auto;
   overflow: hidden;
@@ -21,9 +22,11 @@
 }
 
 .buttonLeft {
+  position: absolute;
+  left: 0;
   z-index: 10;
   width: 140px;
-  height: auto;
+  height: 535px;
   background: linear-gradient(90deg, #0c0909 0%, #0c090900 100%);
   cursor: pointer;
 
@@ -37,9 +40,11 @@
 }
 
 .buttonRight {
+  position: absolute;
+  right: 0;
   z-index: 10;
   width: 140px;
-  height: auto;
+  height: 535px;
   background: linear-gradient(270deg, #0c0909 0%, #0c090900 100%);
   cursor: pointer;
 
@@ -52,67 +57,85 @@
   font-weight: 100;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .sliderImg {
-    max-width: 550px;
+    width: 665px;
+    height: 395px;
+  }
+  .sliderImg img {
+    height: 395px;
+    width: 665px;
+  }
+  .buttonLeft {
+    height: 395px;
+  }
+  .buttonRight {
+    height: 395px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .slider {
+    padding-bottom: 20px;
+  }
+  .sliderImg {
     padding-bottom: 0;
   }
   .sliderImg img {
     border-radius: 10px;
-    max-height: 345px;
-    max-width: 550px;
     padding: 0px 2px;
   }
   .buttonLeft {
-    max-width: 90px;
+    width: 90px;
     font-size: 4rem;
   }
   .buttonRight {
-    max-width: 90px;
+    width: 90px;
     font-size: 4rem;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
+  .slider {
+    padding-bottom: 15px;
+  }
   .sliderImg {
-    max-width: 425px;
-    max-height: 260px;
-    padding-bottom: 0;
+    width: 496px;
+    height: 294px;
   }
   .sliderImg img {
-    border-radius: 10px;
-    max-width: 420px;
-    max-height: 260px;
-    padding: 0px 2px;
+    width: 496px;
+    height: 294px;
   }
   .buttonLeft {
-    max-width: 45px;
-    font-size: 4rem;
+    width: 60px;
+    height: 294px;
   }
   .buttonRight {
-    max-width: 45px;
-    font-size: 4rem;
+    width: 60px;
+    height: 294px;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .slider {
     padding-bottom: 10px;
   }
   .sliderImg {
-    max-width: 280px;
-    max-height: 170px;
-    padding-bottom: 0;
+    width: 382px;
+    height: 230px;
   }
   .sliderImg img {
-    border-radius: 10px;
-    max-width: 280px;
-    max-height: 170px;
-    padding: 0px 2px;
+    width: 382px;
+    height: 230px;
   }
   .buttonLeft {
+    width: 45px;
+    height: 230px;
     font-size: 3.5rem;
   }
   .buttonRight {
+    width: 45px;
+    height: 230px;
     font-size: 3.5rem;
   }
 }

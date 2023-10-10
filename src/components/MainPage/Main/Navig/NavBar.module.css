@@ -19,8 +19,7 @@
 
 .menu {
   font-family: 'Montserrat';
-  font-size: 1.1rem;
-  display: flex;
+  font-size: 1rem;
   opacity: 0.8;
 }
 
@@ -29,33 +28,34 @@
 }
 
 .menu ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 175px;
   list-style: none;
+  padding: 0;
 }
 
 .menu li {
+  justify-self: center;
   color: aliceblue;
-  padding: 25px;
 }
 
 .menuPoints {
   display: none;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
+  .menu {
+    display: none;
+  }
   .NavBar {
-    margin: 10px;
+    margin: 20px;
     display: grid;
     grid-template-columns: 1fr 9fr 1fr;
     justify-items: center;
     align-items: center;
   }
   .logo {
-    font-size: 2rem;
     grid-column-start: 2;
-  }
-  .menu {
-    display: none;
   }
   .menuIcon {
     display: block;
@@ -89,9 +89,19 @@
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 760px) {
   .NavBar {
+    margin: 15px;
     height: 60px;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .NavBar {
+    margin: 10px;
   }
   .logo {
     font-size: 1.8rem;

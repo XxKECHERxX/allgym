@@ -11,20 +11,25 @@
   width: 3px;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .lineRedVert {
     margin: auto 30px;
   }
 }
+@media screen and (max-width: 760px) {
+  .lineRedVert {
+    margin: auto 20px;
+  }
+}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
   .lineRedVert {
     display: none;
   }
   .lineRedVertMobile {
     display: flex;
     justify-content: center;
-    margin: auto 20px;
+    margin: auto 15px;
     width: 3px;
     height: 100px;
   }

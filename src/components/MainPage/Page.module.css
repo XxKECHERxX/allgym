@@ -1,22 +1,31 @@
 .pageCommon {
-  width: 1150px;
+  min-width: 900px;
+  max-width: 1150px;
   margin: auto;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .pageCommon {
-    max-width: 744px;
+    min-width: 761px;
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .pageCommon {
+    min-width: 591px;
+    max-width: 760px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
   .pageCommon {
+    min-width: 377px;
     max-width: 576px;
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .pageCommon {
-    max-width: 376px;
+    max-width: 476px;
   }
 }

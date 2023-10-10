@@ -16,24 +16,25 @@
 }
 
 .menu {
-  font-family: 'Montserrat';
-  font-size: 1rem;
   display: flex;
   align-items: center;
   list-style: none;
   opacity: 0.8;
-  padding-right: 25px;
 }
 
 .menu ul {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
   width: auto;
+  font-family: 'Montserrat';
+  font-size: 1rem;
   color: aliceblue;
-  padding-right: 25px;
+  margin: 20px;
 }
 
 .linksCo {
@@ -41,7 +42,7 @@
   justify-content: space-between;
   flex-direction: column;
   height: 75px;
-  margin: 25px 0;
+  margin: 25px 20px;
 }
 
 .linksCo div {
@@ -57,13 +58,27 @@
   padding-left: 10px;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 760px) {
   .logo {
     font-size: 2rem;
   }
+  .menu {
+    display: grid;
+  }
+  .menu li {
+    font-size: 0.9rem;
+    margin: 15px;
+  }
+  .linksCo {
+    justify-self: center;
+    margin: 15px 0;
+  }
+  .linksCo a {
+    font-size: 0.9rem;
+  }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
   .footer {
     margin: 15px;
   }
@@ -71,16 +86,19 @@
     font-size: 2rem;
   }
   .menu {
-    font-size: 0.8rem;
+    justify-self: center;
   }
   .menu li {
-    padding-right: 15px;
+    font-size: 0.8rem;
+  }
+  .linksCo {
+    margin: 15px 0;
   }
   .linksCo a {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .footer {
     margin: 10px;
   }
@@ -88,18 +106,14 @@
     font-size: 1.8rem;
   }
   .menu {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    font-size: 0.7rem;
+    margin-right: 15px;
   }
-  .menu ul {
-    padding: 0;
-    align-items: center;
+  .menu li {
+    font-size: 0.7rem;
+    margin: 5px;
   }
   .linksCo {
     margin: 10px 0;
-    max-height: 60px;
   }
   .linksCo a {
     font-size: 0.7rem;

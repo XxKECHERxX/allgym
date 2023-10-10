@@ -13,17 +13,18 @@
 }
 
 .textAction {
+  width: auto;
   font-family: 'Montserrat';
   font-size: 1rem;
 }
 
 .imgOfAction img {
-  max-width: 500px;
-  max-height: 300px;
+  width: 475px;
+  height: 300px;
   border-radius: 20px;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .frameAction {
     display: none;
   }
@@ -33,34 +34,38 @@
     align-items: center;
     width: auto;
     margin: auto;
-    padding: 25px;
+    padding: 20px;
     overflow: hidden;
   }
   .imgOfAction img {
-    width: 325px;
-    max-height: 190px;
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .imgOfAction img {
+    height: 190px;
+    width: 315px;
     border-radius: 20px;
   }
   .textAction {
     z-index: -5;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .frameActionMobile {
-    padding: 20px;
-  }
+@media screen and (max-width: 590px) {
   .imgOfAction img {
+    height: 180px;
     width: 270px;
-    max-height: 170px;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   .textAction {
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 476px) {
   .frameActionMobile {
     display: flex;
     flex-direction: column;
@@ -70,12 +75,12 @@
     display: none;
   }
   .imgOfAction img {
-    width: 280px;
-    max-height: 170px;
-    border-radius: 10px;
+    height: 190px;
+    width: 315px;
+    border-radius: 15px;
   }
   .textAction {
-    max-width: 260px;
+    width: 270px;
     margin-top: 5px;
     font-size: 0.7rem;
     text-align: justify;

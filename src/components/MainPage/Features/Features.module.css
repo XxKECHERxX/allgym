@@ -1,10 +1,9 @@
 .featuresContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 25px;
   width: auto;
   overflow: hidden;
+  margin: 15px 30px;
 
   transition-timing-function: ease-in-out;
 }
@@ -14,73 +13,86 @@
 }
 
 .frameFeatures {
-  width: 220px;
+  width: 190px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .frameFeatures img {
-  width: 220px;
-  height: 220px;
-  border-radius: 220px;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
 }
 
 .frameText {
   padding-top: 50px;
-  width: auto;
+  width: 190px;
   text-align: center;
   font-family: 'Montserrat';
   font-size: 1rem;
   line-height: normal;
 }
 
-@media screen and (max-width: 744px) {
+@media screen and (max-width: 900px) {
   .featuresContainer {
     display: none;
   }
   .featuresContainerMobile {
     display: flex;
     justify-content: space-between;
-    margin: 25px;
+    margin: 20px 15px;
     width: auto;
     overflow: hidden;
 
     transition-timing-function: ease-in-out;
   }
   .frameFeatures {
-    max-width: 140px;
-    display: flex;
-    flex-direction: column;
+    width: 160px;
   }
   .frameFeatures img {
-    max-width: 140px;
-    max-height: 140px;
-    border-radius: 140px;
-    justify-content: center;
-    align-items: center;
+    width: 160px;
+    height: 160px;
   }
   .frameText {
-    max-width: 140px;
-    align-self: center;
-    font-size: 1rem;
+    width: 160px;
     padding-top: 25px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 760px) {
   .featuresContainerMobile {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 15px;
     width: auto;
   }
   .frameFeatures {
-    margin: 10px;
+    width: 140px;
+  }
+  .frameFeatures img {
+    width: 140px;
+    height: 140px;
   }
   .frameText {
-    max-width: 110px;
+    width: 140px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .frameFeatures {
+    margin: 10px;
+    width: 130px;
+  }
+  .frameFeatures img {
+    width: 130px;
+    height: 130px;
+  }
+  .frameText {
+    width: 130px;
     font-size: 0.8rem;
   }
 }
@@ -89,16 +101,15 @@
     margin: 5px;
   }
   .frameFeatures {
-    max-width: 120px;
     margin: 10px;
+    width: 120px;
   }
   .frameFeatures img {
-    max-width: 120px;
-    max-height: 120px;
-    border-radius: 120px;
+    width: 120px;
+    height: 120px;
   }
   .frameText {
-    max-width: 120px;
+    width: 120px;
     font-size: 0.7rem;
   }
 }
