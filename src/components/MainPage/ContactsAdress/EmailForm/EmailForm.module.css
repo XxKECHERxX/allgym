@@ -27,6 +27,8 @@
 
 .submitClientEmail {
   display: flex;
+  text-align: center;
+  height: 45px;
   justify-content: center;
   align-items: center;
 }

@@ -3,7 +3,7 @@ import photosGymList from './photosGymList'
 import { useEffect, useState } from 'react'
 
 let IMG_WIDTH
-if (window.innerWidth >= '744') {
+if (window.innerWidth >= '901') {
   IMG_WIDTH = 860
 }
 if (window.innerWidth <= '900' && window.innerWidth >= '761') {
@@ -15,8 +15,11 @@ if (window.innerWidth <= '760' && window.innerWidth >= '591') {
 if (window.innerWidth <= '590' && window.innerWidth >= '477') {
   IMG_WIDTH = 500
 }
-if (window.innerWidth <= '476') {
+if (window.innerWidth <= '476' && window.innerWidth >= '383') {
   IMG_WIDTH = 386
+}
+if (window.innerWidth <= '382') {
+  IMG_WIDTH = 319
 }
 
 const TRANSITION_DURATION = 350

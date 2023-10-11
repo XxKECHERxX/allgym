@@ -41,6 +41,9 @@
     width: 400px;
     height: 250px;
   }
+  .textAction {
+    z-index: -5;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -50,7 +53,6 @@
     border-radius: 20px;
   }
   .textAction {
-    z-index: -5;
     font-size: 0.9rem;
   }
 }

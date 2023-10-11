@@ -4,19 +4,50 @@ import { useState } from 'react'
 
 const NavBar = ({ setTestDrive }) => {
   const handlerScrollToAction = () => {
-    window.scrollTo(0, 100 + 550)
+    window.scrollTo(0, 692)
   }
 
   const handlerScrollToAdress = () => {
-    window.scrollTo(0, 100 + 550 + 400 + 1625)
+    window.scrollTo(0, 2455)
   }
 
   const handlerScrollToActionMiniMenu = () => {
-    window.scrollTo(0, 100 + 225 + 550)
+    if (window.innerWidth <= '900' && window.innerWidth >= '761') {
+      window.scrollTo(0, 725)
+    }
+    if (window.innerWidth <= '760' && window.innerWidth >= '591') {
+      window.scrollTo(0, 700)
+    }
+    if (window.innerWidth <= '590' && window.innerWidth >= '477') {
+      window.scrollTo(0, 590)
+    }
+    if (window.innerWidth <= '476' && window.innerWidth >= '383') {
+      window.scrollTo(0, 510)
+    }
+    if (window.innerWidth <= '382') {
+      window.scrollTo(0, 475)
+    }
   }
 
   const handlerScrollToAdressMiniMenu = () => {
-    window.scrollTo(0, 100 + 225 + 550 + 400 + 1625)
+    if (window.innerWidth <= '900' && window.innerWidth >= '761') {
+      window.scrollTo(0, 2215)
+    }
+    if (window.innerWidth <= '760' && window.innerWidth >= '670') {
+      window.scrollTo(0, 1910)
+    }
+    if (window.innerWidth <= '669' && window.innerWidth >= '591') {
+      window.scrollTo(0, 1950)
+    }
+    if (window.innerWidth <= '590' && window.innerWidth >= '477') {
+      window.scrollTo(0, 1950)
+    }
+    if (window.innerWidth <= '476' && window.innerWidth >= '383') {
+      window.scrollTo(0, 2095)
+    }
+    if (window.innerWidth <= '382') {
+      window.scrollTo(0, 2010)
+    }
   }
 
   const handlerModuleWindow = () => {

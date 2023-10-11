@@ -2,27 +2,35 @@ import { useState } from 'react'
 import styles from './EmailForm.module.css'
 
 const EmailForm = () => {
-  const [clientEmail, setClientEmail] = useState('')
+  const [sendInviteEmail, setSendInviteEmail] = useState('')
+  const [userEmail, setUserEmail] = useState('')
 
-  const handlerClientEmail = () => {
-    setClientEmail('Email Send')
+  const handlerSendInviteEmail = () => {
+    setSendInviteEmail('Email Send')
   }
 
   return (
     <div className={styles.emailForm}>
       <div className={styles.leftDarkSide} />
-      {clientEmail !== '' ? (
-        <p className={styles.submitClientEmail}>Приглашение уже на почте!</p>
+      {sendInviteEmail ? (
+        <p className={styles.submitClientEmail}>
+          Приглашение уже на почте: {userEmail}!
+        </p>
       ) : (
         <form className={styles.formInput}>
           Оставайся на связи:
           <label>
-            <input className={styles.emailInput} placeholder="email" />
+            <input
+              value={userEmail}
+              onChange={(e) => setUserEmail(e.target.value)}
+              className={styles.emailInput}
+              placeholder="email"
+            />
           </label>
           <button
-            type="reset"
+            type="submit"
             className={styles.btnSubmit}
-            onClick={handlerClientEmail}
+            onClick={handlerSendInviteEmail}
           >
             Отправить
           </button>

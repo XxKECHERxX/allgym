@@ -1,5 +1,5 @@
 .pageCommon {
-  min-width: 900px;
+  min-width: 901px;
   max-width: 1150px;
   margin: auto;
 }
@@ -20,12 +20,13 @@
 @media screen and (max-width: 590px) {
   .pageCommon {
     min-width: 377px;
-    max-width: 576px;
+    max-width: 590px;
   }
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 376px) {
   .pageCommon {
-    max-width: 476px;
+    min-width: 320px;
+    max-width: 376px;
   }
 }

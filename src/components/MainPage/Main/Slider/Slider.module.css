@@ -139,3 +139,26 @@
     font-size: 3.5rem;
   }
 }
+@media screen and (max-width: 382px) {
+  .slider {
+    padding-bottom: 10px;
+  }
+  .sliderImg {
+    width: 315px;
+    height: 190px;
+  }
+  .sliderImg img {
+    width: 315px;
+    height: 190px;
+  }
+  .buttonLeft {
+    width: 45px;
+    height: 190px;
+    font-size: 3.5rem;
+  }
+  .buttonRight {
+    width: 45px;
+    height: 190px;
+    font-size: 3.5rem;
+  }
+}

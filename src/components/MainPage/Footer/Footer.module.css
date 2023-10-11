@@ -15,34 +15,13 @@
   letter-spacing: 10px;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  opacity: 0.8;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  width: auto;
-  font-family: 'Montserrat';
-  font-size: 1rem;
-  color: aliceblue;
-  margin: 20px;
-}
-
 .linksCo {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   height: 75px;
   margin: 25px 20px;
+  opacity: 0.8;
 }
 
 .linksCo div {
@@ -62,16 +41,9 @@
   .logo {
     font-size: 2rem;
   }
-  .menu {
-    display: grid;
-  }
-  .menu li {
-    font-size: 0.9rem;
-    margin: 15px;
-  }
   .linksCo {
     justify-self: center;
-    margin: 15px 0;
+    margin: 15px;
   }
   .linksCo a {
     font-size: 0.9rem;
@@ -81,18 +53,6 @@
 @media screen and (max-width: 590px) {
   .footer {
     margin: 15px;
-  }
-  .logo {
-    font-size: 2rem;
-  }
-  .menu {
-    justify-self: center;
-  }
-  .menu li {
-    font-size: 0.8rem;
-  }
-  .linksCo {
-    margin: 15px 0;
   }
   .linksCo a {
     font-size: 0.8rem;
@@ -105,15 +65,8 @@
   .logo {
     font-size: 1.8rem;
   }
-  .menu {
-    margin-right: 15px;
-  }
-  .menu li {
-    font-size: 0.7rem;
-    margin: 5px;
-  }
   .linksCo {
-    margin: 10px 0;
+    margin: 10px;
   }
   .linksCo a {
     font-size: 0.7rem;

@@ -7,7 +7,7 @@ const FormReg = ({ clickBtnClose }) => {
   }
 
   return (
-    <div className={styles.screenHide}>
+    <div className={styles.screenHideBlur}>
       <div className={styles.frameFormReg}>
         <div className={styles.closeBtn} onClick={handleBtnClose}>
           <BtnCloseForm />

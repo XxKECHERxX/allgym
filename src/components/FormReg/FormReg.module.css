@@ -1,30 +1,35 @@
-.screenHide {
+.screenHideBlur {
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 50;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
+  width: 100vw;
+  height: 100vh;
 }
 
 .frameFormReg {
   position: relative;
-  padding-left: 50px;
-  width: 550px;
-  height: 550px;
+  top: -25px;
+  width: 650px;
+  height: 650px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
 }
 
 .closeBtn {
   position: absolute;
-  right: 0;
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
 .formReg {
   position: absolute;
-  bottom: 0;
+  bottom: 75px;
+  left: 75px;
   display: flex;
   align-items: center;
   width: 500px;
@@ -69,31 +74,83 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 744px) {
+
+@media screen and (max-width: 760px) {
+  .frameFormReg {
+    width: 550px;
+    height: 550px;
+  }
+  .formReg {
+    bottom: 25px;
+    left: 25px;
+  }
   .closeBtn {
-    right: 60px;
-    top: 60px;
     z-index: 10;
-  }
-  .textFormReg {
-    font-size: 1.1rem;
-  }
-  .formRegInput {
-    font-size: 1.1rem;
-  }
-  .btnSubmit {
-    font-size: 1.1rem;
+    top: 30px;
+    right: 30px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 590px) {
+  .frameFormReg {
+    width: 400px;
+    height: 550px;
+    border-radius: 15px;
+  }  
+  .formReg {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+  }
   .textFormReg {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
   }
   .formRegInput {
-    font-size: 1.4rem;
+    width: 250px;
+    height: 25px;
+    margin-bottom: 25px;
+    font-size: 0.8rem;
   }
   .btnSubmit {
-    font-size: 1.4rem;
+    width: 120px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  .closeBtn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameFormReg {
+    width: 320px;
+    height: 520px;
+    border-radius: 15px;
+  }  
+  .formReg {
+    bottom: 20px;
+    left: 20px;
+    width: 280px;
+    height: 480px;
+    border-radius: 15px;
+  }
+  .textFormReg {
+    font-size: 0.8rem;
+  }
+  .formRegInput {
+    width: 230px;
+    height: 25px;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+  }
+  .btnSubmit {
+    font-size: 0.8rem;
+  }
+  .closeBtn {
+    top: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
   }
 }

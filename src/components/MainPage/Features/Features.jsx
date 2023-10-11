@@ -11,7 +11,7 @@ const transDuration = 1500
 const Features = () => {
   const [scrollTop, setScrollTop] = useState(0)
 
-  const positionY = scrollTop <= 400 ? 400 - scrollTop : 0
+  let positionY = scrollTop <= 400 ? 400 - scrollTop : 0
 
   const handleScroll = (event) => {
     setScrollTop(window.scrollY)
@@ -30,6 +30,10 @@ const Features = () => {
   useEffect(() => {
     setTimeout(() => setPositionYver2(0), 500)
   }, [])
+
+  if (window.innerHeight >= '780') {
+    positionY = positionYver2
+  }
 
   return (
     <>
