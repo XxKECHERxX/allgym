@@ -29,7 +29,7 @@ const FormReg = ({ clickBtnClose }) => {
               />
             </label>
             <label>
-              <input
+              <textarea
                 className={styles.formRegInput}
                 placeholder="Какое занятие или направление вас интересует?"
                 style={{
