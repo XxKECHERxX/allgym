@@ -36,7 +36,7 @@ const Features = () => {
   }
 
   return (
-    <>
+    <div id='services'>
       <LineRedHorr />
       <section className={styles.featuresContainer}>
         <div
@@ -137,7 +137,7 @@ const Features = () => {
         </div>
       </section>
       <LineRedHorr />
-    </>
+    </div>
   )
 }
 

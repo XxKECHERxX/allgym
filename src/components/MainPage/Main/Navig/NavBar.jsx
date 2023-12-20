@@ -3,53 +3,6 @@ import { MenuIcon } from '../../../UI/Icons/MenuIcon'
 import { useState } from 'react'
 
 const NavBar = ({ setTestDrive }) => {
-  const handlerScrollToAction = () => {
-    window.scrollTo(0, 692)
-  }
-
-  const handlerScrollToAdress = () => {
-    window.scrollTo(0, 2455)
-  }
-
-  const handlerScrollToActionMiniMenu = () => {
-    if (window.innerWidth <= '900' && window.innerWidth >= '761') {
-      window.scrollTo(0, 725)
-    }
-    if (window.innerWidth <= '760' && window.innerWidth >= '591') {
-      window.scrollTo(0, 700)
-    }
-    if (window.innerWidth <= '590' && window.innerWidth >= '477') {
-      window.scrollTo(0, 590)
-    }
-    if (window.innerWidth <= '476' && window.innerWidth >= '383') {
-      window.scrollTo(0, 510)
-    }
-    if (window.innerWidth <= '382') {
-      window.scrollTo(0, 475)
-    }
-  }
-
-  const handlerScrollToAdressMiniMenu = () => {
-    if (window.innerWidth <= '900' && window.innerWidth >= '761') {
-      window.scrollTo(0, 2215)
-    }
-    if (window.innerWidth <= '760' && window.innerWidth >= '670') {
-      window.scrollTo(0, 1910)
-    }
-    if (window.innerWidth <= '669' && window.innerWidth >= '591') {
-      window.scrollTo(0, 1950)
-    }
-    if (window.innerWidth <= '590' && window.innerWidth >= '477') {
-      window.scrollTo(0, 1950)
-    }
-    if (window.innerWidth <= '476' && window.innerWidth >= '383') {
-      window.scrollTo(0, 2095)
-    }
-    if (window.innerWidth <= '382') {
-      window.scrollTo(0, 2010)
-    }
-  }
-
   const handlerModuleWindow = () => {
     setTestDrive(true)
   }
@@ -68,11 +21,11 @@ const NavBar = ({ setTestDrive }) => {
         </div>
         <div className={styles.menu}>
           <ul>
-            <li onClick={handlerScrollToAction} style={{ cursor: 'pointer' }}>
-              Услуги
+            <li>
+              <a href="#services">Услуги</a>
             </li>
-            <li onClick={handlerScrollToAdress} style={{ cursor: 'pointer' }}>
-              Адрес и Контакты
+            <li>
+              <a href="#contacts">Адрес и Контакты</a>
             </li>
             <li
               style={{ color: 'red', cursor: 'pointer' }}
@@ -89,17 +42,11 @@ const NavBar = ({ setTestDrive }) => {
       </nav>
       {openMenu && (
         <div className={styles.menuPoints}>
-          <div
-            onClick={handlerScrollToActionMiniMenu}
-            style={{ cursor: 'pointer' }}
-          >
-            Услуги
+          <div>
+            <a href="#services">Услуги</a>
           </div>
-          <div
-            onClick={handlerScrollToAdressMiniMenu}
-            style={{ cursor: 'pointer' }}
-          >
-            Адрес и Контакты
+          <div>
+            <a href="#contacts">Адрес и Контакты</a>
           </div>
           <div onClick={handlerModuleWindow} style={{ cursor: 'pointer' }}>
             Тест-Драйв

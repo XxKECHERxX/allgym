@@ -3,7 +3,7 @@ import LineRedHorr from '../../../UI/RedLines/LineRedHorr'
 
 const AdressMap = () => {
   return (
-    <>
+    <div id="contacts">
       <LineRedHorr />
       <div className={styles.adressMap}>
         <div className={styles.frameAdressMap}>
@@ -27,7 +27,7 @@ const AdressMap = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
